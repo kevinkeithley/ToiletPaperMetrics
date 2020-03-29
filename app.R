@@ -92,30 +92,30 @@ ui <- fluidPage(
                   h3("How many shits can I take?"),
                   textOutput("how_many"))
          ),
-         hr(),
-         fluidRow(
-           column(12,
-                  tags$a(href="https://github.com/kevinkeithley/ToiletPaperMetrics", "Project files"),
-                  " available on GitHub ",
-                  icon("github","fa-2x",lib = "font-awesome")
-                  )
-         ),
-         fluidRow(
-           column(12,
-                  "App built with ",
-                  tags$a(href="https://shiny.rstudio.com", "Shiny"),
-                  " from ",
-                  tags$a(href="https://rstudio.com/", "RStudio")
-           )
-         ),
-         fluidRow(
-           column(12,
-                  "Copyright ",
-                  icon("copyright"), 
-                  " 2020 Kevin Keithley, MIT License"
-           ))
+         hr()
       )
-   )
+   ),
+  fluidRow(
+    column(12,
+           tags$a(href="https://github.com/kevinkeithley/ToiletPaperMetrics", "Project files"),
+           " available on GitHub ",
+           icon("github","fa-2x",lib = "font-awesome")
+    )
+  ),
+  fluidRow(
+    column(12,
+           "App built with ",
+           tags$a(href="https://shiny.rstudio.com", "Shiny"),
+           " from ",
+           tags$a(href="https://rstudio.com/", "RStudio")
+    )
+  ),
+  fluidRow(
+    column(12,
+           "Copyright ",
+           icon("copyright"), 
+           " 2020 Kevin Keithley, MIT License"
+    ))
 )
 
 # Define server logic
